@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Scandium</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="ressource.qrc">
+    <normaloff>:/main/icon/Sc.png</normaloff>:/main/icon/Sc.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QListWidget" name="resultTable">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>200</width>
+      <height>700</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="valueLabel">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>290</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Value</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="newScanButton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>240</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>New Scan</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nextScanButton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>240</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Next Scan</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="saveTable">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>550</y>
+      <width>400</width>
+      <height>150</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>190</y>
+      <width>340</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="processList">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>0</y>
+      <width>400</width>
+      <height>100</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="listProcessButton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>130</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>List Process</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="selectProcessButton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>130</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select Process</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="valueSpin">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>330</y>
+      <width>350</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-1999999999</number>
+    </property>
+    <property name="maximum">
+     <number>1999999999</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fromLabel">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>370</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>From :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="toLabel">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>410</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>To :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fromEdit">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>370</y>
+      <width>200</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string>HHHHHHHH</string>
+    </property>
+    <property name="text">
+     <string>00050000</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="toEdit">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>410</y>
+      <width>200</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string>HHHHHHHH</string>
+    </property>
+    <property name="text">
+     <string>0009FFFF</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveAddrButton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>500</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save Address</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="editValueButton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>500</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Edit Value</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <action name="actionChoose_Process">
+   <property name="text">
+    <string>Choose Process</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ressource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

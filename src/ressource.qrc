@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/main/icon">
+        <file>Sc.bmp</file>
+        <file>Sc.ico</file>
+        <file>Sc.png</file>
+    </qresource>
+</RCC>
